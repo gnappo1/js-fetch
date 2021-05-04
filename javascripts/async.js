@@ -11,10 +11,10 @@ setTimeout(function timeout() {
 console.log("Bye");
 
 
-const promiseA = new Promise( (resolutionFunc,rejectionFunc) => {
-    resolutionFunc(777);
-    rejectionFunc(new Error)
-});
-// At this point, "promiseA" is already settled.
-promiseA.then( (val) => console.log("asynchronous logging has val:",val) );
-console.log("immediate logging");
+// const promiseA = new Promise( (resolutionFunc,rejectionFunc) => {
+//     resolutionFunc(777);
+//     rejectionFunc(new Error)
+// });
+// // At this point, "promiseA" is already settled.
+// promiseA.then( (val) => console.log("asynchronous logging has val:",val) );
+// console.log("immediate logging");
